@@ -10,7 +10,7 @@ pipeline {
       }
       stage('Unit_Testing') {
          steps {
-         	sh "/usr/bin/pip install -r requirements.txt"
+         	sh "/usr/local/bin/pip install -r requirements.txt"
             	sh "/usr/bin/python -m pytest -v tests/test_generator.py"
          }
       }
